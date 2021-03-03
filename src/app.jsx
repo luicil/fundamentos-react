@@ -8,6 +8,7 @@ import ComParametro from './components/basics/comParametro'
 import Fragmento from './components/basics/fragmento'
 import Aleatorio from './components/basics/aleatorio'
 import Card from './components/layout/Card'
+import Familia from './components/basics/familia'
 
 const tag = <strong>Olá React</strong>
 
@@ -16,6 +17,11 @@ export default ()=> (
     <div className="app">
 
         <div className="Cards" >
+
+        <Card titulo="Componente com filho" color="#DFFF00" >
+                <Familia sobrenome="Fernandes" />
+            </Card>
+
 
             <Card titulo="Exemplo de Card" color="#DFFF00" >
                 <Aleatorio min={1} max={60} />
