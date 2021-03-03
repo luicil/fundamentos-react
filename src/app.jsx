@@ -17,7 +17,7 @@ export default ()=> (
 
         <div className="Cards" >
 
-            <Card titulo="Exemplo de Card">
+            <Card titulo="Exemplo de Card" color="#DFFF00" >
                 <Aleatorio min={1} max={60} />
             </Card>
 
@@ -25,7 +25,7 @@ export default ()=> (
                 <Fragmento />
             </Card>
 
-            <Card titulo="ComParametro">
+            <Card titulo="ComParametro" color="#6495ED" >
                 <ComParametro
                     titulo="Componente 2"
                     aluno="Luicil"
@@ -33,11 +33,11 @@ export default ()=> (
                 />
             </Card>
 
-            <Card titulo = "Tag">
+            <Card titulo = "Tag" color="#DE3163" >
                 {tag}
             </Card>
 
-            <Card titulo= "Primeiro">
+            <Card titulo= "Primeiro" color="#FFA07A" >
                 <Primeiro/>
             </Card>
 
