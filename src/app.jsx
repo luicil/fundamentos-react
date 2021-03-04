@@ -11,6 +11,7 @@ import Card from './components/layout/Card'
 import Familia from './components/basics/familia'
 import FamiliaMembro from './components/basics/familiaMembro'
 import ListaAlunos from './components/repeticao/listaAlunos'
+import TabelaProdutos from './components/repeticao/tabelaProdutos'
 
 const tag = <strong>Olá React</strong>
 
@@ -19,6 +20,11 @@ export default () => (
     <div className="app">
 
         <div className="Cards" >
+
+        <Card titulo="Repetição Produtos" color="#AFF020" >
+                <TabelaProdutos></TabelaProdutos>
+            </Card>
+
 
             <Card titulo="Lista de Alunos" color="#DFF020" >
                 <ListaAlunos></ListaAlunos>
