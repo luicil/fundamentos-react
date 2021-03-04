@@ -9,6 +9,7 @@ import Fragmento from './components/basics/fragmento'
 import Aleatorio from './components/basics/aleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basics/familia'
+import FamiliaMembro from './components/basics/familiaMembro'
 
 const tag = <strong>Olá React</strong>
 
@@ -19,7 +20,11 @@ export default ()=> (
         <div className="Cards" >
 
         <Card titulo="Componente com filho" color="#DFFF00" >
-                <Familia sobrenome="Fernandes" />
+                <Familia sobrenome="Fernandes" >
+                    <FamiliaMembro nome="Luicil" />
+                    <FamiliaMembro nome="Nanci" />
+                    <FamiliaMembro nome="Rafael" />
+                </Familia>
             </Card>
 
 
