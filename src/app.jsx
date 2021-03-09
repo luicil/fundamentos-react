@@ -13,6 +13,7 @@ import FamiliaMembro from './components/basics/familiaMembro'
 import ListaAlunos from './components/repeticao/listaAlunos'
 import TabelaProdutos from './components/repeticao/tabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 const tag = <strong>Olá React</strong>
 
@@ -24,6 +25,8 @@ export default () => (
 
         <Card titulo="Renderização Condicional" color="#AFA020" >
                 <ParOuImpar numero = {21} />
+                <UsuarioInfo usuario = {{nome: 'Luicil'}} />
+                <UsuarioInfo usuario = {{}} />
             </Card>
 
 
