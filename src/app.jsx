@@ -12,6 +12,7 @@ import Familia from './components/basics/familia'
 import FamiliaMembro from './components/basics/familiaMembro'
 import ListaAlunos from './components/repeticao/listaAlunos'
 import TabelaProdutos from './components/repeticao/tabelaProdutos'
+import ParOuImpar from './components/condicional/ParOuImpar'
 
 const tag = <strong>Olá React</strong>
 
@@ -21,7 +22,12 @@ export default () => (
 
         <div className="Cards" >
 
-        <Card titulo="Repetição Produtos" color="#AFF020" >
+        <Card titulo="Renderização Condicional" color="#AFA020" >
+                <ParOuImpar numero = {21} />
+            </Card>
+
+
+            <Card titulo="Repetição Produtos" color="#AFF020" >
                 <TabelaProdutos></TabelaProdutos>
             </Card>
 
