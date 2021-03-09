@@ -14,6 +14,7 @@ import ListaAlunos from './components/repeticao/listaAlunos'
 import TabelaProdutos from './components/repeticao/tabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
+import DiretaPai from './components/comunicacao/diretaPai'
 
 const tag = <strong>Olá React</strong>
 
@@ -23,12 +24,15 @@ export default () => (
 
         <div className="Cards" >
 
-        <Card titulo="Renderização Condicional" color="#AFA020" >
-                <ParOuImpar numero = {21} />
-                <UsuarioInfo usuario = {{nome: 'Luicil'}} />
-                <UsuarioInfo usuario = {{}} />
+            <Card titulo="Comunicação Direta" color="#AFA051" >
+                <DiretaPai />
             </Card>
 
+            <Card titulo="Renderização Condicional" color="#AFA020" >
+                <ParOuImpar numero={21} />
+                <UsuarioInfo usuario={{ nome: 'Luicil' }} />
+                <UsuarioInfo usuario={{}} />
+            </Card>
 
             <Card titulo="Repetição Produtos" color="#AFF020" >
                 <TabelaProdutos></TabelaProdutos>
