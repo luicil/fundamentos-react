@@ -15,6 +15,7 @@ import TabelaProdutos from './components/repeticao/tabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/diretaPai'
+import IndiretaPai from './components/comunicacao/indiretaPai'
 
 const tag = <strong>Olá React</strong>
 
@@ -23,6 +24,10 @@ export default () => (
     <div className="app">
 
         <div className="Cards" >
+
+            <Card titulo="Comunicação Indireta" color="#DD3163" >
+                <IndiretaPai />
+            </Card>
 
             <Card titulo="Comunicação Direta" color="#AFA051" >
                 <DiretaPai />
