@@ -18,6 +18,7 @@ import DiretaPai from './components/comunicacao/diretaPai'
 import IndiretaPai from './components/comunicacao/indiretaPai'
 import Input from './components/formulario/input'
 import Contador from './components/contador/Contador'
+import Contador2 from './components/contador/Contador2'
 
 
 const tag = <strong>Olá React</strong>
@@ -28,7 +29,11 @@ export default () => (
 
         <div className="Cards" >
 
-        <Card titulo="Contador" color="#DF1279" >
+            <Card titulo="Contador 2" color="#AA1279" >
+                <Contador2 numeroInicial={5} passoInicial={2} />
+            </Card>
+
+            <Card titulo="Contador" color="#DF1279" >
                 <Contador numeroInicial={5} passoInicial={2} />
             </Card>
 
