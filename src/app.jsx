@@ -17,6 +17,7 @@ import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/diretaPai'
 import IndiretaPai from './components/comunicacao/indiretaPai'
 import Input from './components/formulario/input'
+import Contador from './components/contador/Contador'
 
 
 const tag = <strong>Olá React</strong>
@@ -27,6 +28,9 @@ export default () => (
 
         <div className="Cards" >
 
+        <Card titulo="Contador" color="#DF1279" >
+                <Contador numeroInicial={5} passoInicial={2} />
+            </Card>
 
             <Card titulo="Componente Controlado" color="#DD3179" >
                 <Input />
